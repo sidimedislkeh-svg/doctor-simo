@@ -10,7 +10,7 @@ const DOCTOR_DATA = {
 
   /* ── Doctor Identity ─────────────────────────────────── */
   name: "Dr. Simo",
-  photo: "images/doctor.webp",
+  photo: "doctor.webp",
   phone: "+22230788882",
   whatsapp: "+22230788882",
 
@@ -178,7 +178,7 @@ const DOCTOR_DATA = {
   clinics: [
     {
       id: "las-palmas",
-      image: "images/las-palmas.webp",
+      image: "las-palmas.webp",
       name: { ar: "عيادة لاس بالماس الطبية", fr: "Clinique Las Palmas" },
       workDays: { ar: "الاثنين، الأربعاء، الجمعة", fr: "Lun, Mer, Ven" },
       workHours: "08:00 – 00:00",
@@ -189,7 +189,7 @@ const DOCTOR_DATA = {
     },
     {
       id: "nouakchott",
-      image: "images/nouakchott.webp",
+      image: "nouakchott.webp",
       name: { ar: "عيادة نواكشوط", fr: "Clinique Nouakchott" },
       workDays: { ar: "الثلاثاء", fr: "Mardi" },
       workHours: "17:00 – 00:00",
@@ -200,7 +200,7 @@ const DOCTOR_DATA = {
     },
     {
       id: "vital",
-      image: "images/vital.webp",
+      image: "vital.webp",
       name: { ar: "عيادة فيتال", fr: "Clinique Vital" },
       workDays: { ar: "الخميس", fr: "Jeudi" },
       workHours: "17:00 – 08:00",
