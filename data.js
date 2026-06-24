@@ -10,7 +10,7 @@ const DOCTOR_DATA = {
 
   /* ── Doctor Identity ─────────────────────────────────── */
   name: "Dr. Simo",
-  photo: "doctor.webp",
+  photo: "images/doctor.webp",
   phone: "+22230788882",
   whatsapp: "+22230788882",
 
@@ -30,7 +30,7 @@ const DOCTOR_DATA = {
 
       /* Hero */
       specialty:     "طبيب عام",
-      tagline:       "أقدم رعاية طبية شاملة لجميع أفراد العائلة مع متابعة الحالات الشائعة والمزمنة وتقديم النصائح الصحية المناسبة.",
+      tagline:      " أؤمن بقداسة النفس البشرية والجسد، وأضع وقتي في خدمتكم لتقديم الرعاية الطبية العامة والمتابعة الصحية للأفراد والأسر بإذن الله تعالى.",
       btn_call:      "اتصل الآن",
       btn_whatsapp:  "واتساب",
 
@@ -41,28 +41,30 @@ const DOCTOR_DATA = {
       /* Services */
       section_services_title: "خدماتنا",
       services: [
-        { icon: "🩺", title: "فحص عام", desc: "فحص شامل لتقييم الحالة الصحية العامة." },
-        { icon: "💉", title: "متابعة ضغط الدم والسكري", desc: "متابعة دقيقة ومنتظمة للأمراض المزمنة." },
-        { icon: "👶", title: "صحة الأطفال", desc: "رعاية متكاملة لصحة الطفل ومتابعة نموه." },
-        { icon: "💬", title: "الاستشارات الطبية", desc: "استشارة طبية متخصصة لتشخيص حالتك وتوجيهك." },
-        { icon: "📋", title: "متابعة الحالات الشائعة", desc: "متابعة الأمراض الشائعة وضمان التعافي السريع." },
-        { icon: "🛡️", title: "نصائح صحية وقائية", desc: "إرشادات وقائية للحفاظ على صحتك وصحة عائلتك." },
+        { icon: "🏥", title: "الاستشارات الطبية العامة والحالات المستعجلة"},
+        { icon: "🩸", title: "متابعة الأمراض المزمنة (الضغط والسكري)" },
+        { icon: "👶", title: "استشارات طب الأطفال ومتابعة نمو الطفل" },
+        { icon: "📋", title: "التقييم الصحي الدوري والكشف المبكر" },
+        { icon: "🥗", title: "التغذية الصحية والنشاط البدني ونمط الحياة السليم" },
+        { icon: "🤰", title: "تشخيص الحمل والتوجيه الطبي" },
+        { icon: "💬", title: "التثقيف الصحي والإجابة عن الاستفسارات الطبية"},
+        { icon: "🔄", title: "توجيه الحالات إلى التخصص المناسب"},
       ],
 
       /* Qualifications */
       section_quals_title: "المؤهلات والخبرة",
       qualifications: [
-        { icon: "🎓", title: "طبيب عام" },
         { icon: "🏥", title: "الرعاية الصحية الأولية" },
-        { icon: "👨‍👩‍👧", title: "متابعة الأطفال والعائلة" },
-        { icon: "📌", title: "متابعة الحالات الشائعة والمزمنة" },
+        { icon: "🎓", title: "طبيب عام معتمد" },
+        { icon: "👨‍👩‍👧‍👦", title: "رعاية الأسرة والطفل" },
+        { icon: "🩺", title: "متابعة الأمراض المزمنة" },
       ],
 
       /* Today's Location */
-      section_today_title: "أين الطبيب اليوم؟",
-      today_present:  "الطبيب متواجد اليوم في",
+      section_today_title:  "📍أين الطبيب الآن؟",
+      today_present:  "الطبيب متواجد حاليا في",
       today_absent:   "الطبيب غير متواجد في العيادة اليوم.",
-      today_rest:     "يوم الراحة — سيعود غداً",
+      today_rest:     "يوم الراحة — سيعود الاثنين",
 
       /* Clinics */
       section_clinics_title: "أماكن العمل",
@@ -108,7 +110,7 @@ const DOCTOR_DATA = {
 
       /* Hero */
       specialty:     "Médecin Généraliste",
-      tagline:       "J'assure une prise en charge médicale générale pour toute la famille avec le suivi des pathologies courantes et chroniques ainsi que des conseils de santé adaptés.",
+      tagline:       "Je crois en la valeur sacrée de la vie humaine et du corps, et je mets mon temps à votre service pour offrir des soins médicaux généraux et un suivi de santé aux individus et aux familles, avec la volonté de Dieu.",
       btn_call:      "Appeler",
       btn_whatsapp:  "WhatsApp",
 
@@ -119,28 +121,30 @@ const DOCTOR_DATA = {
       /* Services */
       section_services_title: "Nos Services",
       services: [
-        { icon: "🩺", title: "Examen général", desc: "Bilan de santé complet pour évaluer votre état général." },
-        { icon: "💉", title: "Suivi tension & diabète", desc: "Suivi régulier et précis des maladies chroniques." },
-        { icon: "👶", title: "Santé de l'enfant", desc: "Soins complets et suivi de la croissance de l'enfant." },
-        { icon: "💬", title: "Consultations médicales", desc: "Consultation spécialisée pour diagnostiquer et orienter." },
-        { icon: "📋", title: "Suivi des pathologies courantes", desc: "Suivi des maladies courantes pour une guérison rapide." },
-        { icon: "🛡️", title: "Conseils préventifs", desc: "Conseils pour préserver votre santé et celle de votre famille." },
+        { icon: "🏥", title: "Consultations médicales générales et prise en charge des urgences courantes" },
+        { icon: "🩸", title: "Suivi des maladies chroniques (hypertension artérielle et diabète)" },
+        { icon: "👶", title: "Pédiatrie et suivi de la croissance et de la santé de l’enfant" },
+        { icon: "📋", title: "Bilan de santé périodique et dépistage précoce des facteurs de risque" },
+        { icon: "🥗", title: "Conseils en nutrition, activité physique et mode de vie sain" },
+        { icon: "🤰", title: "Diagnostic de grossesse et accompagnement médical tout au long de ses différentes étapes" },
+        { icon: "💬", title: "Éducation sanitaire, réponses aux questions médicales et aide à la prise de décisions de santé"},
+        { icon: "🔄", title: "Orientation des patients vers le spécialiste adapté lorsque nécessaire"},
       ],
 
       /* Qualifications */
       section_quals_title: "Qualifications & Expérience",
       qualifications: [
-        { icon: "🎓", title: "Médecin Généraliste" },
         { icon: "🏥", title: "Soins de santé primaires" },
-        { icon: "👨‍👩‍👧", title: "Suivi enfants & famille" },
-        { icon: "📌", title: "Pathologies courantes & chroniques" },
+        { icon: "🎓", title: "Médecin généraliste" },
+        { icon: "👨‍👩‍👧‍👦", title: "Suivi de la famille et de l’enfant" },
+        { icon: "🩺", title: "Suivi des maladies chroniques" },
       ],
 
       /* Today's Location */
-      section_today_title: "Où est le médecin aujourd'hui ?",
-      today_present:  "Le médecin est disponible aujourd'hui à",
+      section_today_title: "📍 Où est le médecin maintenant ?",
+      today_present:  "Le médecin est actuellement à la",
       today_absent:   "Le médecin n'est pas disponible en clinique aujourd'hui.",
-      today_rest:     "Jour de repos — retour demain",
+      today_rest:     "Jour de repos — retour lundi",
 
       /* Clinics */
       section_clinics_title: "Lieux d'exercice",
@@ -172,15 +176,77 @@ const DOCTOR_DATA = {
       /* Days of week */
       days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
     },
-  },
+  
+
+en: {
+  dir: "ltr",
+  lang: "en",
+  font: "'Inter', sans-serif",
+
+  nav_about: "About",
+  nav_services: "Services",
+  nav_clinics: "Clinics",
+  nav_book: "Book",
+
+  specialty: "General Practitioner",
+  tagline: "I believe in the sacred value of human life and the body, and I dedicate my time to serving you by providing general medical care and health follow-up for individuals and families, by the will of God.",
+  btn_call: "Call Now",
+  btn_whatsapp: "WhatsApp",
+
+  section_about_title: "About the Doctor",
+  about_text: "A general practitioner providing primary healthcare for the whole family, with follow-up for common and chronic conditions such as hypertension and diabetes, as well as child health and preventive care.",
+
+  section_services_title: "Our Services",
+  services: [
+    { icon: "🏥", title: "General medical consultations and urgent common cases" },
+    { icon: "🩸", title: "Follow-up for chronic diseases (hypertension and diabetes)" },
+    { icon: "👶", title: "Pediatric consultations and child growth follow-up" },
+    { icon: "📋", title: "Periodic health check-ups and early risk detection" },
+    { icon: "🥗", title: "Healthy nutrition, physical activity and lifestyle advice" },
+    { icon: "🤰", title: "Pregnancy diagnosis and medical guidance" },
+    { icon: "💬", title: "Health education and answers to medical questions" },
+    { icon: "🔄", title: "Referral to the appropriate medical specialist" },
+  ],
+
+  section_quals_title: "Qualifications & Experience",
+  qualifications: [
+    { icon: "🏥", title: "Primary healthcare" },
+    { icon: "🎓", title: "General practitioner" },
+    { icon: "👨‍👩‍👧‍👦", title: "Family and child care" },
+    { icon: "🩺", title: "Chronic disease follow-up" },
+  ],
+
+  section_today_title: "📍 Where is the doctor now?",
+  today_present: "The doctor is currently at",
+  today_absent: "The doctor is not currently available at the clinic.",
+  today_rest: "Rest day — returns on Monday",
+
+  section_clinics_title: "Workplaces",
+  btn_call_label: "Call",
+  btn_whatsapp_label: "WhatsApp",
+  btn_map_label: "Location",
+  days_label: "Working days",
+  hours_label: "Working hours",
+  no_location: "Location not available",
+
+  whatsapp_msg: "Hello, I would like to book an appointment with Dr. Simo.",
+
+  footer_phone: "Phone",
+  footer_whatsapp: "WhatsApp",
+  footer_address: "Nouakchott, Mauritania",
+  footer_rights: "All rights reserved",
+
+  days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+}
+},
 
   /* ── Clinics ─────────────────────────────────────────── */
   clinics: [
     {
       id: "las-palmas",
-      image: "las-palmas.webp",
-      name: { ar: "عيادة لاس بالماس الطبية", fr: "Clinique Las Palmas" },
-      workDays: { ar: "الاثنين، الأربعاء، الجمعة", fr: "Lun, Mer, Ven" },
+      image: "images/las-palmas.webp",
+      name: { ar: "عيادة لاس بالماس الطبية", fr: "Clinique Las Palmas" , en: "Las Palmas Clinic" },
+      workDays: { ar: "الاثنين، الأربعاء، الجمعة", fr: "Lun, Mer, Ven" , en: "Mon, Wed, Fri"},
       workHours: "08:00 – 00:00",
       clinicPhone: "+22230788882",
       clinicWhatsapp: "+22230788882",
@@ -189,9 +255,9 @@ const DOCTOR_DATA = {
     },
     {
       id: "nouakchott",
-      image: "nouakchott.webp",
-      name: { ar: "عيادة نواكشوط", fr: "Clinique Nouakchott" },
-      workDays: { ar: "الثلاثاء", fr: "Mardi" },
+      image: "images/nouakchott.webp",
+      name: { ar: "عيادة نواكشوط", fr: "Clinique Nouakchott", en: "Nouakchott Clinic" },
+      workDays: { ar: "الثلاثاء", fr: "Mardi" , en: "Mon, Wed, Fri"},
       workHours: "17:00 – 00:00",
       clinicPhone: "+22230788882",
       clinicWhatsapp: "+22230788882",
@@ -200,9 +266,9 @@ const DOCTOR_DATA = {
     },
     {
       id: "vital",
-      image: "vital.webp",
-      name: { ar: "عيادة فيتال", fr: "Clinique Vital" },
-      workDays: { ar: "الخميس", fr: "Jeudi" },
+      image: "images/vital.webp",
+      name: { ar: "عيادة فيتال", fr: "Clinique Vital" , en: "Vital Clinic"},
+      workDays: { ar: "الخميس", fr: "Jeudi" , en: "Mon, Wed, Fri"},
       workHours: "17:00 – 08:00",
       clinicPhone: "+22230788882",
       clinicWhatsapp: "+22230788882",
