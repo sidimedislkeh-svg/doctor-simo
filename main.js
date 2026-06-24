@@ -40,8 +40,25 @@ function setLanguage(lang) {
   initMap();          // re-render map popups in new language
 }
 
-$('lang-toggle').addEventListener('click', () => {
-  setLanguage(currentLang === 'ar' ? 'fr' : 'ar');
+const langBtn = $('lang-toggle');
+const langMenu = $('language-menu');
+
+langBtn.addEventListener('click', () => {
+  langMenu.classList.toggle('show');
+});
+
+document.querySelectorAll('[data-lang]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const lang = btn.dataset.lang;
+    setLanguage(lang);
+    langMenu.classList.remove('show');
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.language-selector')) {
+    langMenu.classList.remove('show');
+  }
 });
 
 /* ── Navbar ──────────────────────────────────────────────── */
@@ -51,12 +68,12 @@ function renderNavbar() {
   $('nav-about').textContent    = tr.nav_about;
   $('nav-services').textContent = tr.nav_services;
   $('nav-clinics').textContent  = tr.nav_clinics;
-  $('nav-book').textContent     = tr.nav_book;
   $('mnav-about').textContent    = tr.nav_about;
   $('mnav-services').textContent = tr.nav_services;
   $('mnav-clinics').textContent  = tr.nav_clinics;
-  $('mnav-book').textContent     = tr.nav_book;
-  $('lang-toggle').textContent   = currentLang === 'ar' ? 'FR' : 'AR';
+  if ($('current-lang-label')) {
+  $('current-lang-label').textContent = currentLang.toUpperCase();
+}
 }
 
 // Navbar scroll shadow
@@ -114,7 +131,6 @@ function renderServices() {
     <div class="service-card fade-up">
       <div class="service-card__icon" aria-hidden="true">${s.icon}</div>
       <h3 class="service-card__title">${s.title}</h3>
-      <p  class="service-card__desc">${s.desc}</p>
     </div>
   `).join('');
 }
@@ -333,7 +349,7 @@ function renderAll() {
   renderQualifications();
   renderToday();
   renderClinics();
-  renderBooking();
+  if ($('book-title')) renderBooking();
   renderFooter();
 
   // Re-attach scroll animations after DOM update
